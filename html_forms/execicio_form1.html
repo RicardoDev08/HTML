@@ -10,21 +10,98 @@
     <body> 
         <form>
         <!-- <p>Primeiro Nome</p>--testar opção-->
-            <fieldset><legend>Nomes Usuário</legend>
+            <fieldset><legend><b>Nomes Usuário</b></legend>
                 <label for ="fname"> Primeiro Nome:</label><br>
                 <input type ="text" id="fname" name="fname" required placeholder="aluno" maxlength="10" size="10"><br><br>
 
                 <label for ="mname"> Segundo Nome:</label><br>
                 <input type="text"id ="mname"name="mname"required placeholder="Sobrenome1"maxleght="10" size="10"><br><br>
                 
-                <label for="lname">Terceiro Nome: </label><br>
-                <input type="text"id="lname"name="lname" placeholder="Sobrenome 2"maxleght="10" size="10">
+                <label for="lname">Terceiro Nome:</label><br>
+                <input type="text"id="lname"name="lname" placeholder="Sobrenome 2"maxleght="10" size="10"><br><br>
             
-                <label for="apelido">Apelido: </label><br>
-                <input type="text"id="apelido"name="apelido"placeholder="apelido123" maxlength="10" size="10"><br>
+                <label for="apelido">Apelido:</label><br>
+                <input type="text"id="apelido"name="apelido"placeholder="apelido123" maxlength="10" size="10"><br><br>
+            
+                <label for="Nome Social">Nome Social</label><br>
+                <input type="text" id="nsocial"name="nsocial"place holder="Nome Social..."maxleght="10" size="10"><br><br>
+            </fieldset>    
+           
+            <fieldset><legend><b>Qual sua linguagem favorita?</b></legend>
+                <input type="radio"id= "html"name="fav_language"value="HTML"checkread>
+                <label for ="html">HTML</label><br>        
+            
+                <input type="radio"id="css"name="fav_language"value="CSS"checkread>
+                <label for ="css">CSS</label><br>
+
+                <input type="radio"id="javascript" name ="fav_language"value="JS"checkread>
+                <label for ="JS">JS</label><br><br>
             
             </fieldset>    
+    
+            <label for ="fmail">E-mail</label><br>
+            <input type="email"id="fmail"id="fmail" size="20" maxlength="30"
+            required placeholder="exemplo@exemplo.com"><br><br>
+
+            <label for ="senha">Senha:</label><br>
+            <input type="password"id="senha" size="20"required replaceholder="senha@123"><br><br>
+
+            <label for ="telefone">Telefone:</label><br>
+            <input type ="tel"id="telefone"name="telefone"
+            placeholder="(xx) 99999-9999"
+            pattern="\(\d{2}\) 9\d{4}-\d{4}"><br><br>
+
+            <label for="data">Data de Nascimento:</label><br>
+            <input type="date"id="datanascimeto" size="20"maxleght="30"
+            placeholder="dd-mm-aaaa"><br><br>
+          
+            <label for="cor">Escolha uma cor:</label>
+            <input type="color" id="cor" name="cor"><br><br>
+
+            <label for="idade">Idade:</label>
+            <input type ="idade"id="idade"name="idade"><br><br>
+
+            <p><b>Qual é seu Gênero?</b></p>
+           
+            <input type="radio" id="masculino" name="genero" value="masculino"checkread><!--checkhead-->
+            <label for="masculino">Masculino</label><br>
+
+            <input type="radio" id="feminino" name="genero" value="feminino" checkread><!--radio ter uma opçao marcada, coloca-se depois de "type"-->
+            <label for="feminino">Feminino</label><br>
+        
+            <input type="radio" id="outro" name="genero" value="outro" chekread>
+            <label for="outro">Outro</label><br>
+
+            <p><b>Qual seu time favorito?</b></p>
             
+            <input type="checkbox" id="corinthians" name="fav_time" value="corinthians"checkread><!--checkhead-->
+            <label for="corinthians">Corinthians</label><br>
+
+            <input type="checkbox" id="palmeiras" name="fav_time" value="palmeiras" checkread><!--radio ter uma opçao marcada, coloca-se depois de "type"-->
+            <label for="palmeiras">Palmeiras</label><br>
+    
+            <input type="checkbox" id="flamengo" name="fav_time" value="flamengo" chekread>
+            <label for="flamengo">Flamengo</label><br><br>
         
+            <label for="pais"><b>Pais:</b></label>
+            <select id="pais" name="pais">
+                <option value="brasil"> Brasil</option>
+                <option value="alemanha">Alemanha</option>
+                <option value="estados unidos">Estados Unidos</option>
+                <option value="outro">Outro</option>
+            </select><br><br>
+
+                <label for="arquivo"><legend>Envie sua foto de perfil:</legend> </label>
+                <input type="file" id="arquivo" name="arquivo"><br><br>    
+
+                <label for="pesquisa">Pesquisar algo:</label><br>
+                <input type ="seach"id="pesquisa"
+                name="pesquisa"placeholder="buscar..."><br><br>
+                <button type ="submit">Pesquisar</button><br><br>
         
-</head>    
+                <input type="submit" value = "Enviar" required>
+                <button type="reset">Limpar Formulário</button>
+        </form>
+    </body>
+</head>        
+

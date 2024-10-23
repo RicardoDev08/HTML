@@ -1,0 +1,39 @@
+body {
+    background: linear-gradient(#d1d9da, #add8e6
+    );
+}
+.imagem1{
+    border-radius: 20px;
+    box-shadow: rgb(206, 193, 193);
+    position:absolute;
+    top:10;
+    left: 10px; ;
+}
+    
+
+
+.imagem2{
+
+    position:relative;
+    top: auto;
+    left: auto;
+
+}
+.imagem3{
+    position:absolute;
+    top: auto;
+    left:auto ;
+}
+.imagem4{
+    position:relative ;
+    top: auto;
+    left: auto; ;
+}
+.imagem5{
+    position: relative;
+    top: auto;
+    left: auto;
+}
+.paragrafo1,.paragrafo2,.paragrafo3,.paragrafo4,.paragrafo2{
+    
+}

@@ -35,20 +35,75 @@
 .paragrafo1,.paragrafo2,.paragrafo3,.paragrafo4,.paragrafo5{
     
 } */
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centraliza o conteúdo na horizontal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
+ 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d3eef5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+ 
 .container {
     display: flex;
-    justify-content: center; /* Centraliza as imagens no container */
-    flex-wrap: wrap; /* Permite que as imagens se movam para a próxima linha se não houver espaço */
-    margin: 20px 0; /* Espaço em cima e embaixo do container */
+    gap: 20px;
 }
-
-.imagem-container {
-    text-align: center; /* Centraliza o texto abaixo de cada imagem */
-    margin: 10px; /* Espaço entre as imagens */
+ 
+.card {
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+ 
+.card:hover {
+    transform: scale(1.05);
+}
+ 
+.card img {
+    width: 100%;
+    height: auto;
+}
+ 
+.text {
+    padding: 15px;
+    font-size: 14px;
+    text-align: center;
+}
+ 
+.text.blue {
+    background-color: #00f;
+    color: #fff;
+}
+ 
+.text.red {
+    background-color: #f00;
+    color: #fff;
+}
+ 
+.text.green {
+    background-color: #90ee90;
+    color: #006400;
+}
+ 
+.text.orange {
+    background-color: #ffa07a;
+    color: #8b0000;
+}
+ 
+.text.darkred {
+    background-color: #8b0000;
+    color: #ffa07a;
+}
+ 
+p {
+    margin: 0;
+    line-height: 1.5;
 }

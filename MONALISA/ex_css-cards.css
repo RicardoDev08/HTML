@@ -34,8 +34,8 @@
 }
 .paragrafo1,.paragrafo2,.paragrafo3,.paragrafo4,.paragrafo5{
     
-} */
-/* * {
+} */ */
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -106,4 +106,4 @@ body {
 p {
     margin: 0;
     line-height: 1.5;
-} */
+}
